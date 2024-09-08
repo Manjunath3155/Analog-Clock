@@ -1,0 +1,129 @@
+body{
+    font-family:'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+    background-color: rgb(231, 207, 178);
+}
+
+.header{
+    position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   top: 170px;
+   font-size: 40px;
+   font-weight: bold;
+   
+}
+
+.clock-dial{
+    position: relative;
+    height: 500px;
+    width: 500px;
+    border: 8px solid rgba(255,255,255, 0.5);
+    background-color: cadetblue;
+    border-radius: 35%;
+     margin: 0 auto;
+     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.9);
+}
+
+
+.center{
+    
+    position: absolute;
+    height: 13px;
+    width: 13px;
+    background-color: black;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(10%,7%);
+    z-index: 10;
+}
+
+.square{
+    width: 520px;
+    height: 517px;
+    background-color: black;
+    border-radius: 7%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.9);
+
+}
+
+.clock-dial span{
+    position: absolute;
+    font-size: 26px;
+    font-weight: bold;
+    position: absolute;
+    position: absolute;
+    transform: rotate(calc(30deg*var(--i)));
+    inset: 12px;
+    text-align: center;
+}
+
+
+.clock-dial span b{
+    transform: rotate(calc(-30deg*var(--i)));
+    display: inline-block;
+    font-size: 1.7rem;
+}
+
+.hour-hand{
+    height: 145px;
+    width: 0.15rem;
+    background-color: rgb(177, 72, 72);
+    left: 256px;
+    top: 113px;
+
+}
+
+.hour-hand .bxs-down-arrow{
+    /* display: none; */
+    position: absolute;
+    transform: translate(-45%,-50%) rotate(180deg);
+    /* font-weight: bolder;*/
+    font-size: 25px;
+}
+
+.minute-hand {
+    background-color:rgba(126, 175, 216, 0.822);
+    height: 195px;
+    width: 0.15rem;
+    left: 256px;
+    top: 62px;
+}
+
+.minute-hand .bxs-down-arrow {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    transform: translate(-45%, -50%) rotate(180deg);
+    /* font-weight: bolder;*/
+    font-size: 25px;
+}
+
+.second-hand{
+    
+    position: absolute;
+    height: 168px;
+    width: 0.15rem;
+    background-color: rgb(0, 0, 0);
+    left: 256px;
+    top: 90px;
+    
+}
+
+.hour-hand,
+.minute-hand,
+.second-hand {
+    position: absolute;
+    background-color: black;
+    transform-origin: bottom center;
+}
+
+
+
+
+
+
